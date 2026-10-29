@@ -1,4 +1,14 @@
 :root {
+  --bg: #17191d;
+  --surface: #202329;
+  --text: #f1f3f5;
+  --muted: #a2a8b0;
+  --line: #383d45;
+  --blue: #30425c;
+  --blue-deep: #9bbbe9;
+  --mono: "DM Mono", monospace;
+}
+html[data-theme="light"] {
   --bg: #f4f5f7;
   --surface: #fff;
   --text: #202328;
@@ -6,7 +16,6 @@
   --line: #e2e5e8;
   --blue: #cddffc;
   --blue-deep: #5076b2;
-  --mono: "DM Mono", monospace;
 }
 * {
   box-sizing: border-box;
@@ -78,6 +87,12 @@ nav a.active {
   border-radius: 8px;
   position: relative;
 }
+html[data-theme="dark"] .theme-toggle i {
+  background: #303640;
+}
+html[data-theme="light"] .theme-toggle i {
+  background: #e8ebef;
+}
 .theme-toggle i:after {
   content: "";
   position: absolute;
@@ -88,6 +103,10 @@ nav a.active {
   border-radius: 50%;
   background: #fff;
   box-shadow: 0 1px 2px #c7cbd0;
+  transition: transform 220ms ease;
+}
+html[data-theme="dark"] .theme-toggle i:after {
+  transform: translateX(8px);
 }
 .theme-toggle b {
   font-weight: 400;
@@ -177,13 +196,21 @@ nav a.active {
   margin-top: 25px;
   text-transform: uppercase;
 }
-.availability span {
+.availability .status-dot {
   display: inline-block;
   width: 7px;
   height: 7px;
   background: #81b17c;
   border-radius: 50%;
   margin-right: 8px;
+}
+.availability .availability-text {
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  margin: 0;
 }
 .quick-links {
   display: grid;

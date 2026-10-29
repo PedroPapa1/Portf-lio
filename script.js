@@ -4,7 +4,7 @@ const themeToggle = document.querySelector(".theme-toggle");
 const langToggle = document.querySelector("#lang-toggle");
 const root = document.documentElement;
 const themeFixes = document.createElement("style");
-themeFixes.textContent = `[data-theme="dark"] .tags span{background:#2a3039;color:#b8c7dc}[data-theme="dark"] .theme-toggle,[data-theme="dark"] .lang-toggle{background:#202329;border-color:#383d45;color:#f1f3f5}[data-theme="dark"] .theme-toggle i{background:#303640}.lang-toggle{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:4px;padding:6px 9px;font:10px var(--mono);cursor:pointer}.project-detail{margin-top:8px!important}.availability span[data-i18n="available"]{display:inline!important;width:auto!important;height:auto!important;background:none!important;border-radius:0!important;box-shadow:none!important;margin:0!important}.portrait{width:150px;height:150px;border-radius:50%;margin:0 auto;box-shadow:0 0 0 6px var(--surface),0 0 0 7px var(--line)}.portrait:before,.portrait:after,.portrait-caption{display:none}.portrait-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 27%;z-index:1}`;
+themeFixes.textContent = `[data-theme="dark"] .tags span{background:#2a3039;color:#b8c7dc}[data-theme="dark"] .lang-toggle{background:#202329;border-color:#383d45;color:#f1f3f5}.lang-toggle{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:4px;padding:6px 9px;font:10px var(--mono);cursor:pointer}.project-detail{margin-top:8px!important}.portrait{width:150px;height:150px;border-radius:50%;margin:0 auto;box-shadow:0 0 0 6px var(--surface),0 0 0 7px var(--line)}.portrait:before,.portrait:after,.portrait-caption{display:none}.portrait-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 27%;z-index:1}`;
 document.head.appendChild(themeFixes);
 const portrait = document.querySelector(".portrait");
 if (portrait) {
@@ -139,11 +139,7 @@ const applyTheme = (isDark) => {
     localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
   } catch {}
 };
-try {
-  applyTheme(localStorage.getItem("portfolio-theme") !== "light");
-} catch {
-  applyTheme(true);
-}
+applyTheme(true);
 themeToggle?.addEventListener("click", () => applyTheme(root.dataset.theme !== "dark"));
 menu?.addEventListener("click", () => {
   const open = nav.classList.toggle("mobile-open");
