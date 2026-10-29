@@ -10,6 +10,7 @@ Personal portfolio for Pedro Henrique Papa Amorim dos Santos, built with plain H
 - GitHub, LinkedIn and StakeFlow links
 - Experience, education and technical skills
 - GitHub Pages-ready static files
+- Portuguese and English PDF resumes
 
 ## Run locally
 

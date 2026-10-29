@@ -21,6 +21,7 @@ const translations = {
     navHome: "Home",
     navExperience: "Experiência",
     navProjects: "Projetos",
+    navResumes: "Currículos",
     navLinks: "Links",
     hello: "Olá <span>👋</span>, eu sou",
     bio1: "Sou estudante de <strong>Ciência da Computação</strong> na USCS, com formação prevista para dezembro de 2026. Construo aplicações web e experiências digitais com foco em clareza e resultado.",
@@ -46,6 +47,10 @@ const translations = {
     courseText:
       "Curso de 400 horas com HTML, CSS, JavaScript, TypeScript, React, Node.js, EJS, Git, GitHub, consumo de APIs e fundamentos de testes.",
     projectsTitle: "Projetos em destaque",
+    resumesTitle: "Currículos",
+    resumeLanguagePt: "Versão em português",
+    resumeLanguageEn: "Versão em inglês",
+    resumeAction: "Abrir currículo em PDF",
     stakeType: "Projeto autoral · Full-stack",
     stakeText:
       "Plataforma de gestão e análise de apostas com front-end, back-end, banco de dados, API própria e deploy.",
@@ -60,6 +65,7 @@ const translations = {
     navHome: "Home",
     navExperience: "Experience",
     navProjects: "Projects",
+    navResumes: "Resumes",
     navLinks: "Links",
     hello: "Hello <span>👋</span>, I am",
     bio1: "I am a <strong>Computer Science</strong> student at USCS, graduating in December 2026. I build web applications and digital experiences focused on clarity and impact.",
@@ -84,6 +90,10 @@ const translations = {
     courseText:
       "400-hour course covering HTML, CSS, JavaScript, TypeScript, React, Node.js, EJS, Git, GitHub, API consumption, and testing fundamentals.",
     projectsTitle: "Featured projects",
+    resumesTitle: "Resumes",
+    resumeLanguagePt: "Portuguese version",
+    resumeLanguageEn: "English version",
+    resumeAction: "Open PDF resume",
     stakeType: "Personal project · Full-stack",
     stakeText:
       "Betting management and analytics platform with front-end, back-end, database, custom API, and deployment.",

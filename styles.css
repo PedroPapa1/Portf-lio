@@ -8,6 +8,19 @@
   --blue-deep: #9bbbe9;
   --mono: "DM Mono", monospace;
 }
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.resume-card {
+  margin-bottom: 0;
+}
+@media (max-width: 680px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
 html[data-theme="light"] {
   --bg: #f4f5f7;
   --surface: #fff;
