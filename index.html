@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Pedro Papa — estudante de Ciência da Computação e desenvolvedor full-stack."
+    />
+    <meta name="theme-color" content="#f4f5f7" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>Pedro Papa — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="logo" href="#home">PP<span>.</span></a>
+        <nav aria-label="Navegação principal">
+          <a class="active" href="#home" data-i18n="navHome">Home</a
+          ><a href="#experiencia" data-i18n="navExperience">Experiência</a
+          ><a href="#projetos" data-i18n="navProjects">Projetos</a><a href="#links" data-i18n="navLinks">Links</a>
+        </nav>
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">EN</button
+        ><button class="theme-toggle" aria-label="Alternar tema"><span>☼</span><i></i><b>☾</b></button
+        ><button class="menu" aria-label="Abrir menu"><span></span><span></span></button>
+      </header>
+      <main id="home">
+        <section class="intro">
+          <div class="portrait">
+            <div class="portrait-mark">PP</div>
+            <span class="portrait-caption">Pedro Papa · SP</span>
+          </div>
+          <div class="intro-copy">
+            <p class="hello" data-i18n="hello">Olá <span>👋</span>, eu sou</p>
+            <h1>Pedro Papa.</h1>
+            <p class="bio" data-i18n="bio1">
+              Sou estudante de <strong>Ciência da Computação</strong> na USCS, com formação prevista para dezembro de
+              2026. Construo aplicações web e experiências digitais com foco em clareza e resultado.
+            </p>
+            <p class="bio" data-i18n="bio2">
+              Tenho interesse por desenvolvimento full-stack, consumo e integração de APIs, testes e tecnologia aplicada
+              a problemas reais.
+            </p>
+            <div class="availability">
+              <span></span> <span data-i18n="available">Disponível para novas oportunidades</span>
+            </div>
+          </div>
+        </section>
+        <section class="quick-links" id="links">
+          <a href="https://github.com/PedroPapa1" target="_blank" rel="noreferrer"
+            ><span><small data-i18n="githubSmall">Veja meu código</small><strong>GitHub</strong></span
+            ><b>↗</b></a
+          ><a href="https://www.linkedin.com/in/pedro-henrique-papa-40b348268/" target="_blank" rel="noreferrer"
+            ><span><small data-i18n="linkedinSmall">Vamos nos conectar</small><strong>LinkedIn</strong></span
+            ><b>↗</b></a
+          ><a href="https://stakeflow.com.br/" target="_blank" rel="noreferrer"
+            ><span><small data-i18n="stakeSmall">Conheça meu projeto</small><strong>StakeFlow</strong></span
+            ><b>↗</b></a
+          >
+        </section>
+        <section class="section" id="experiencia">
+          <div class="section-title">
+            <span>01</span>
+            <h2 data-i18n="experienceTitle">Experiência</h2>
+          </div>
+          <div class="experience-item">
+            <div class="date">2024 — presente</div>
+            <div>
+              <h3 data-i18n="stakeExperienceTitle">Desenvolvedor Full-stack <span>·</span> StakeFlow</h3>
+              <p data-i18n="stakeExperienceText">
+                Projeto autoral desenvolvido de ponta a ponta: front-end, back-end, banco de dados, API própria, deploy
+                e integração com inteligência artificial.
+              </p>
+              <div class="tags">
+                <span>React</span><span>TypeScript</span><span>Node.js</span><span>APIs</span
+                ><span data-i18n="testing">Testes</span>
+              </div>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="date">jun 2024 — nov 2025</div>
+            <div>
+              <h3 data-i18n="cloudbedsTitle">Jovem Aprendiz <span>·</span> Cloudbeds</h3>
+              <p data-i18n="cloudbedsText">
+                Apoio à coordenação e à diretoria, organização de atividades internas, participação em reuniões e
+                aplicação de conhecimentos técnicos em atividades profissionais.
+              </p>
+              <div class="tags">
+                <span>Front-end</span><span>APIs</span><span data-i18n="testing">Testes</span
+                ><span data-i18n="teamwork">Trabalho em equipe</span>
+              </div>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="date">2023 — dez 2026</div>
+            <div>
+              <h3 data-i18n="degreeTitle">Bacharelado em Ciência da Computação</h3>
+              <p data-i18n="degreeText">
+                Universidade Municipal de São Caetano do Sul (USCS). Formação prevista para dezembro de 2026.
+              </p>
+              <div class="tags"><span>USCS</span><span data-i18n="inProgress">Em andamento</span></div>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="date">2017 — 2021</div>
+            <div>
+              <h3 data-i18n="wizardTitle">Formação em inglês <span>·</span> Wizard</h3>
+              <p data-i18n="wizardText">
+                Curso de inglês concluído na Wizard, com fluência desenvolvida para comunicação acadêmica e
+                profissional.
+              </p>
+              <div class="tags"><span>English</span><span data-i18n="fluency">Fluência</span></div>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="date">set 2025</div>
+            <div>
+              <h3 data-i18n="courseTitle">Curso de Front-end <span>·</span> Udemy</h3>
+              <p data-i18n="courseText">
+                Curso de 400 horas com HTML, CSS, JavaScript, TypeScript, React, Node.js, EJS, Git, GitHub, consumo de
+                APIs e fundamentos de testes.
+              </p>
+              <div class="tags">
+                <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Node.js</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section projects" id="projetos">
+          <div class="section-title">
+            <span>02</span>
+            <h2 data-i18n="projectsTitle">Projetos em destaque</h2>
+          </div>
+          <a class="project-card" href="https://stakeflow.com.br/" target="_blank" rel="noreferrer"
+            ><div class="project-mark">01</div>
+            <div>
+              <small data-i18n="stakeType">Projeto autoral · Full-stack</small>
+              <h3>StakeFlow</h3>
+              <p data-i18n="stakeText">
+                Plataforma de gestão e análise de apostas com front-end, back-end, banco de dados, API própria e deploy.
+              </p>
+              <p class="project-detail" data-i18n="stakeDetail">
+                Inclui bot no Telegram integrado ao Google Gemini para interpretar apostas em linguagem natural e
+                automatizar seus registros.
+              </p>
+            </div>
+            <b>↗</b></a
+          ><a class="project-card muted" href="https://github.com/PedroPapa1" target="_blank" rel="noreferrer"
+            ><div class="project-mark">02</div>
+            <div>
+              <small data-i18n="githubType">Mais projetos no</small>
+              <h3>GitHub</h3>
+              <p data-i18n="githubText">Veja meus estudos, experimentos e projetos em desenvolvimento.</p>
+            </div>
+            <b>↗</b></a
+          >
+        </section>
+      </main>
+      <footer><span>© 2026 Pedro Papa</span><span data-i18n="location">São Caetano do Sul · SP</span></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
